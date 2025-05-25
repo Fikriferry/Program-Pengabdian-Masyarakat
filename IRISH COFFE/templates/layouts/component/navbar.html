@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold ms-3" style="color: #d4af37;" href="/">
+      <div class="brand fw-bold" style="font-size: 24px; font-family: 'Cinzel', serif;">IRISH</div>
+      <div class="tagline" style="font-size: 14px; font-family: 'Cinzel', serif;">Coffee & Bakes</div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+        <li class="nav-item me-3">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" href="/product">Product</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+.custom-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.custom-navbar .nav-link {
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+  background-color: rgba(47, 27, 21, 0.95); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.custom-navbar.scrolled .nav-link {
+  color: #d4af37 !important;  
+}
+</style>
+
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.custom-navbar');
+    if (window.scrollY > 70) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>

@@ -1,0 +1,44 @@
+<div class="container py-2">
+    <!-- Title -->
+    <div class="text-center mb-5">
+        <p class="text-warning fw-semibold mb-3" style="font-family: Helvetica;">FROM THE BEST INDONESIAN SPECIALTY COFFEE TO HEART-WARMING FOODS</p>
+        <h2 class="fw-bold fs-1 mt-4" style="color: rgb(171, 181, 185); font-family: 'Lucida Console';">OUR MENU</h2>
+        <div class="bg-warning mx-auto mt-4" style="height: 10px; width: 80px;"></div>
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="row text-center g-4">
+        <!-- Our Beans -->
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='image/menu-1.jpg') }}" class="img-fluid rounded" alt="Our Beans">
+            <h5 class=" mt-3" style="color:#ffffff;">OUR BEANS</h5>
+            <p class="small" style="color: #cccccc;">Biji kopi grade Specialty Arabica dan Fine Robusta dari 9 perkebunan terbaik
+                Indonesia.</p>
+        </div>
+
+        <!-- Coffee-Based Drinks -->
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='image/menu-2.jpg') }}" class="img-fluid rounded"
+                alt="Coffee-Based Drinks">
+            <h5 class=" mt-3" style="color: #ffffff">COFFEE-BASED DRINKS</h5>
+            <p class="small" style="color: #cccccc;">Dari minuman tradisional berbasis espresso sampai berbagai minuman racikan kopi
+                terkini.</p>
+        </div>
+
+        <!-- Non-Coffee -->
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='image/menu-3.jpg') }}" class="img-fluid rounded" alt="Non-Coffee">
+            <h5 class=" mt-3" style="color: #ffffff;">NON-COFFEE</h5>
+            <p class="small" style="color: #cccccc;">Kami juga memiliki menu non-coffee untuk kamu yang ingin pilihan lain selain
+                kopi dan untuk anak-anak.</p>
+        </div>
+
+        <!-- Food & Snack -->
+        <div class="col-md-3">
+            <img src="{{ url_for('static', filename='image/menu-4.jpg') }}" class="img-fluid rounded" alt="Food & Snack">
+            <h5 class=" mt-3" style="color: #ffffff;">FOOD & SNACK</h5>
+            <p class="small" style="color: #cccccc;">Berbagai macam makanan ringan sampai makanan utama siap menemani secangkir
+                kopimu.</p>
+        </div>
+    </div>
+</div>
